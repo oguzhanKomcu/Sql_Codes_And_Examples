@@ -4,15 +4,6 @@
 
 use tire_and_rim_shop1
 
-----/*Having : When we group with group by, we also use aggregate functions (count,sum,min,max,avg) expressions. 
-----In these cases, we cannot filter with the "where" command. We use the "having" command for this. However, in cases where aggregate functions expressions are not used, we can filter with the "where" command. 
-
-select Diameter ,  sum((SalePrice - ArrivalPrice) * UnıtsInStock) as [Total Remainder Of The Sale]  from Tires  group by Diameter having  sum((SalePrice - ArrivalPrice) * UnıtsInStock) > 3000 
-
-select Diameter , sum(UnıtsInStock) as [Stock] from Tires group by Diameter having  sum(UnıtsInStock) > 10
-
-
-
 
 ---DML (Data Manipulating Language) : Adding, updating and deleting data in the database
 ---İnsert : In the insert operation, first the name of the table to which the insertion is made, and then the column names to be inserted are written in parentheses. 
@@ -38,3 +29,4 @@ update Suppliers set Phone = '05359877884'  where SuppliersId = 70
 
 ---Let's delete the new supplier we added.
 delete  from Suppliers WHERE SuppliersId = 70
+
