@@ -30,3 +30,6 @@ You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes
 It allows the creation, deletion and editing of some basic properties of tables, which are objects where data is kept.I used these when creating my database
 You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/DDL(DATADefinitionLanguage).sql)
 
+## JOİN
+It serves to create a result table by querying two or more tables at the same time. We can also use "group by" and "order by" expressions together.
+You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/Joins.sql)
