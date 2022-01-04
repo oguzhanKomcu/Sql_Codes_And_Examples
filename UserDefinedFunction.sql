@@ -1,20 +1,20 @@
 use tire_and_rim_shop1
 
 
---USER DEFÝNED FUNCTÝON
+--USER DEFINED FUNCTION
 
 ---Let's make a function for our profit calculation.
 
 go
-create function KARHESAPLA(@satýþfiyatý MONEY , @alýþfiyatý money,  @stokmiktarý smallint) ---First we give the name of the function. Then we write it with the data types of the columns we will use in it.
+create function KARHESAPLA(@satÃ½Ã¾fiyatÃ½ MONEY , @alÃ½Ã¾fiyatÃ½ money,  @stokmiktarÃ½ smallint) ---First we give the name of the function. Then we write it with the data types of the columns we will use in it.
 
 returns int  as  --We write the data type we want to convert.
-  begin return  (@satýþfiyatý - @alýþfiyatý )* @stokmiktarý  end --we apply the operation we want to do in our function.
+  begin return  (@satÃ½Ã¾fiyatÃ½ - @alÃ½Ã¾fiyatÃ½ )* @stokmiktarÃ½  end --we apply the operation we want to do in our function.
   go
 
 --WE CHECK OUR FUNCTION.
   select   Diameter, 
-  sum(dbo.KARHESAPLA(SalePrice,ArrivalPrice,UnýtsInStock  ) )from tires group by Diameter
+  sum(dbo.KARHESAPLA(SalePrice,ArrivalPrice,UnitsInStock  ) )from tires group by Diameter
 
 
  --- Let's make a function to capitalize letters in text
