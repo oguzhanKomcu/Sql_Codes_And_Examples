@@ -6,10 +6,10 @@ use tire_and_rim_shop1
 ---Let's make a function for our profit calculation.
 
 go
-create function KARHESAPLA(@satýþfiyatý MONEY , @alýþfiyatý money,  @stokmiktarý smallint) ---First we give the name of the function. Then we write it with the data types of the columns we will use in it.
+create function KARHESAPLA(@satisfiyati MONEY , @alisfiyati money,  @stokmiktari smallint) ---First we give the name of the function. Then we write it with the data types of the columns we will use in it.
 
 returns int  as  --We write the data type we want to convert.
-  begin return  (@satýþfiyatý - @alýþfiyatý )* @stokmiktarý  end --we apply the operation we want to do in our function.
+  begin return  (@satisfiyati - @alisfiyati )* @stokmiktari  end --we apply the operation we want to do in our function.
   go
 
 --WE CHECK OUR FUNCTION.
