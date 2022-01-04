@@ -3,7 +3,7 @@
 use tire_and_rim_shop1
 
 
---JOÝN :A database can have related tables. We may need common data in these tables. By using the "JOIN" statement in SQL, the tables are joined virtually and the data becomes meaningful.
+--JOIN :A database can have related tables. We may need common data in these tables. By using the "JOIN" statement in SQL, the tables are joined virtually and the data becomes meaningful.
  
 ---/* Let's combine the tire and supplier tables.
 
