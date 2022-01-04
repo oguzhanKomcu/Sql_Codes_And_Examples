@@ -33,3 +33,7 @@ You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes
 ## JOİN
 Join command is used to create a result table by querying two or more tables at the same time. We can also use "group by" and "order by" expressions together.
 You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/Joins.sql)
+
+## USER DEFİNED FUNCTİON
+Working with SQL While working on tables, we can repeat the desired operations many times. However, when there is a change in the repeated operations, we need to change them one by one. For this, we define the operation in a function that we have created, and when there is any change, it will be sufficient to just change the operation in the function.
+You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/UserDefinedFunction.sql)
