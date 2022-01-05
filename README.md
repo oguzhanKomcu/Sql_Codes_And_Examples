@@ -37,3 +37,12 @@ You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes
 ## USER DEFİNED FUNCTİON
 Working with SQL While working on tables, we can repeat the desired operations many times. However, when there is a change in the repeated operations, we need to change them one by one. For this, we define the operation in a function that we have created, and when there is any change, it will be sufficient to just change the operation in the function.
 You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/UserDefinedFunction.sql)
+
+### TABLE-VALUED FUNCTİON
+TABLE-VALUE FUNCTION in an example database I showed.
+You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/TABLE-VALUED%20FUNCT%C4%B0ON.sql)
+
+##STORED PROCEDURE
+In operations such as CRUD in the database, we have to rewrite and compile the code each time. When this is the case, there is a loss of performance in terms of both time and compilation. In such cases, the Store Procedure allows us to write code according to the expressions used in programming. Thus, we save time without having to do the same operations every time.
+You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/STORED%20PROCEDURE.sql)
+
