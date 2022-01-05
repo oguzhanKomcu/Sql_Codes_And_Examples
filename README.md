@@ -43,6 +43,6 @@ TABLE-VALUE FUNCTION in an example database I showed.
 You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/TABLE-VALUED%20FUNCT%C4%B0ON.sql)
 
 ## STORED PROCEDURE
-In operations such as CRUD in the database, we have to rewrite and compile the code each time. When this is the case, there is a loss of performance in terms of both time and compilation. In such cases, the Store Procedure allows us to write code according to the expressions used in programming. Thus, we save time without having to do the same operations every time.
+In operations such as CRUD in the database, we have to rewrite and compile the code each time. When this is the case, there is a loss of performance in terms of both time and compilation. In such cases, the Store Procedure allows us to write code according to the expressions used in programming. Thus, we save time without having to do the same operations every time.STORED PROCEDURE in an example database I showed. 
 You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/STORED%20PROCEDURE.sql)
 
