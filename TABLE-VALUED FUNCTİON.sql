@@ -24,7 +24,7 @@ select*from GETLOCATIONSINFO(1500)
 ----Let's write a function that returns information by employee name.
 
 GO
-alter FUNCTION GETEMPLOYEELOCATION(@employeeName nvarchar(50),@employeeLastName nvarchar(50)) 
+create FUNCTION GETEMPLOYEELOCATION(@employeeName nvarchar(50),@employeeLastName nvarchar(50)) 
 RETURNS TABLE 
    RETURN SELECT 
                 
