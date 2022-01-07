@@ -46,3 +46,8 @@ You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes
 In operations such as CRUD in the database, we have to rewrite and compile the code each time. When this is the case, there is a loss of performance in terms of both time and compilation. In such cases, the Store Procedure allows us to write code according to the expressions used in programming. Thus, we save time without having to do the same operations every time.STORED PROCEDURE in an example database I showed. 
 You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/STORED%20PROCEDURE.sql)
 
+## TRİGGERS İN SQL SERVER
+Trigger structure is a special type of store procedure that automatically runs before or when certain events occur in a table in relational database management systems. We use the trigger structure when we want certain operations to be performed on the same table or another table, before or when an insertion, updating, or deletion of a table occurs. I showed the application of the trigger with the examples I made.
+You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/Trigger%C4%B0nSQL.sql)
+
+
