@@ -19,15 +19,20 @@ instead of insert
 	 @department_id = department_id   from inserted
 	 set @lastnameupper = upper(@lastname)
 
-	 insert employees VALUES ( @first_name,@lastnameupper
-	,@email , @phone, @hire_date  ,
+	 insert employees VALUES ( @first_name,@lastnameupper,
+	@email , @phone, @hire_date  ,
 	 @job_id  , @salary,
 	 @manager_id  ,
 	 @department_id)
 
 	 END
-
-	 insert into employees VALUES ('Oðuzhan','kömcü','oguzkmc@hmail.com' ,'53458796','1995-07-10','6','8000','100','3' )
+          
+	  
+	 --Let's add a new employee.
+	 
+	 insert into employees VALUES ('OÄŸuzhan','kÃ¶mcÃ¼','oguzkmc@hmail.com' ,'53458796','1995-07-10','6','8000','100','3' )
+	 
+	 --control
 	 select*from employees
 
 
@@ -35,13 +40,3 @@ instead of insert
 
 
 
-
-
-	 insert Shippers (CompanyName,Phone) VALUES (@companyName,@formatedPhoneNumber)
-	 END 
-
-
-insert into Shippers values ('Yurt içi kargo','02129999999')
-select*from Shippers
-
-select * from employees
