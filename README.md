@@ -47,7 +47,10 @@ In operations such as CRUD in the database, we have to rewrite and compile the c
 You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/STORED%20PROCEDURE.sql)
 
 ## TRİGGERS İN SQL SERVER
+### ALTER TRİGGER 
 Trigger structure is a special type of store procedure that automatically runs before or when certain events occur in a table in relational database management systems. We use the trigger structure when we want certain operations to be performed on the same table or another table, before or when an insertion, updating, or deletion of a table occurs. I showed the application of the trigger with the examples I made.
 You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/Trigger%C4%B0nSQL.sql)
 
-
+### INSTEAD OF TRİGGER
+It comes into play while the specified operation is taking place, and starts to execute the commands defined in it. That is, it replaces the specified operation. Since instead of trigger can be included in the operations, it can be used for control purposes. It checks in advance on the provision of suitable conditions.
+You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/InsteadOfTriggers.sql)
