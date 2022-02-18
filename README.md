@@ -54,3 +54,8 @@ You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes
 ### INSTEAD OF TRİGGER
 It comes into play while the specified operation is taking place, and starts to execute the commands defined in it. That is, it replaces the specified operation. Since instead of trigger can be included in the operations, it can be used for control purposes. It checks in advance on the provision of suitable conditions.
 You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/InsteadOfTriggers.sql)
+
+##RAISERROR
+While using SQL server, we sometimes got errors. These errors had numbers and messages. We can create errors in this way. By writing our own procedure, we can throw an error similar to the exception in C# when the value entered by the user is incorrect.I have shown the details in the example I applied.
+You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/RAISERROR.sql)
+
