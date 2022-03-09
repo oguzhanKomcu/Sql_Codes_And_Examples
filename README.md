@@ -1,7 +1,13 @@
 # Sql_Codes_And_Examples
 In this file I show examples of working in database with Sql. Here, I gave information about both reading and creating a database.
 
+## WHAT IS SQL ?
+<img src="https://d9v7j6n3.rocketcdn.me/wp-content/uploads/2020/08/sql-nedir.png" width="500" height="300">
+
+SQL is the standard language for dealing with Relational Databases. SQL can be used to insert, search, update, and delete database records. SQL can do lots of other operations, including optimizing and maintenance of databases.
+
 ## NEW DATABASE
+
 I created a database. I prepared their tables and entered their data.
 This site was built using [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/tire_and_rim_shop1.sql).
 I entered the sample data of the tables I created in the database.
@@ -9,6 +15,9 @@ You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes
  
 
 ## SELECT COMMAND AND CONDITIONAL STATEMENTS 
+
+<img src="https://lh4.googleusercontent.com/-MI6CFyCFJLTMD3Ze_FhZhX5_MBzOuWXNZMknHRYwNwN1iBe_V2rWudx_ssbsxFZ4PSQnTHdSAmCtGU-VO-E1XcXjqxKLudU2oXf5Ez0rf7Wmupc4FqCbg7vZh1J04QC4QBWrpTM" width="500" height="300">
+
 The SELECT statement is used to select data from a database. This process is called querying. The data returned by the SELECT command is stored in a table called the result set.
 Here, I made filters in the database I created with the "where" command along with the select command. Among them, I also showed the " and&or , in, like, order by " queries.
 You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/Sql_Codes_And_Examples/blob/main/SqlReadFunction.sql).
