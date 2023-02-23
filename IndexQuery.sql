@@ -26,3 +26,18 @@ CREATE  NONCLUSTERED INDEX  tELnUMBERIndex1 on CUSTOMERS
 (
    TELNR
 )
+GO
+
+
+
+--INCLUDE table creation script
+--It is more correct to make an include table for queries that are not a single line but more than one line.
+
+CREATE  NONCLUSTERED INDEX   BirthDateIndex1 on CUSTOMERS
+(
+   BIRTHDATE
+)
+INCLUDE ( NAMESURNAME,TELNR,TOWN,CITY,NAME_,SURNAME,TCNO,GENDER) 
+
+SET statistics io on
+select * from CUSTOMERS WHERE BIRTHDATE = '1953-02-02'
