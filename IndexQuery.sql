@@ -12,3 +12,8 @@ CREATE NONCLUSTERED INDEX NameSurnameIndex1 ON CUSTOMERS
 SET statistics io on
 select * from CUSTOMERS WHERE NAMESURNAME LIKE 'Oğuzhan Kömcü'
 
+
+
+--Script showing table row and dimension information
+SP_SPACEUSED 'CUSTOMERS'
+
