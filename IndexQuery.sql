@@ -57,9 +57,21 @@ ON Persons
 
 
 
+--If new rows are added in a column of the indexed table, 
+--it is added irregularly to the end of the sequential index pages.
+--This causes Fragmentation. Now, while reading, it reads sequentially up to the indexed place, 
+--but if it is outside of that indexed area, 
+--it searches within those mixed pages.
+--To see the fragmentation rate in the index in our table, 
+--we can right click on the index, properties, select a page / Fragmentation field.
+--In such a case, we can rebuild our index if this ratio is above or below 40 percent. So we can "rebuild" it.
+--For this, it is sufficient to run the following script.
 
-
-
+--Basic Rebuild Command
+ALTER INDEX Index_Name ON Table_Name REBUILD
+ 
+--REBUILD Index with ONLINE OPTION
+ALTER INDEX Index_Name ON Table_Name REBUILD WITH(ONLINE=ON)
 
 
 
