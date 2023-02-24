@@ -41,3 +41,25 @@ INCLUDE ( NAMESURNAME,TELNR,TOWN,CITY,NAME_,SURNAME,TCNO,GENDER)
 
 SET statistics io on
 select * from CUSTOMERS WHERE BIRTHDATE = '1953-02-02'
+
+
+--Since the indexing to the primary key is also unique, 
+--it returns that row directly, 
+--but even if it finds that row in a field relative to Tc, 
+--it continues to search because it thinks there may be another one. 
+--We need to specify that this is not repeated in the table, it is unique.
+
+CREATE UNIQUE INDEX tc_Index
+ON Persons 
+(
+    TC
+); 
+
+
+
+
+
+
+
+
+
