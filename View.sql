@@ -1,4 +1,9 @@
-CREATE VIEW VWORDERS
+
+--We can have join scripts that are this long in SQL. In order not to create these scripts over and over again,
+--we collect them in a view table to make them more understandable. 
+--We can create it as "Create view (viewname) as (required script)".
+
+CREATE VIEW VWFiRSTCREATE
 AS
 SELECT
 U.USERNAME_ KULLANICIADI, U.NAMESURNAME ADSOYAD, C.COUNTRY ULKE, CT.CITY SEHIR, T.TOWN ILCE,
