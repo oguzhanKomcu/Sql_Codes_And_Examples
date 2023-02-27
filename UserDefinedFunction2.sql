@@ -88,3 +88,19 @@ END
 
 return @RESULT 
 END
+
+
+
+
+--Function that placed the last order of the customer
+CREATE FUNCTION get_last_order_date (customer_id INT)
+RETURNS DATETIME
+BEGIN
+    DECLARE last_order_date DATETIME;
+    SELECT MAX(order_date) INTO last_order_date
+    FROM orders
+    WHERE customer_id = customer_id;
+    RETURN last_order_date;
+END;
+
+
