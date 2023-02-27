@@ -33,3 +33,31 @@ END
 
 --test
 SELECT DBO.MONTHNAME('20230816')
+
+
+--I have product , order , order details tables in the database. 
+--I want to create a sql user function with these. 
+--I'm going to give this function a month and a year. Accordingly, 
+--he will give me the most sold product that month, its quantity,
+--and the least sold product and its quantity.
+--If we want to return a batch of data. For this we need to say "returns table".
+
+
+CREATE FUNCTION dbo.GetMonthlyStats(@Month INT, @Year INT)
+RETURNS TABLE
+AS
+RETURN
+    SELECT 
+        TOP 1
+        p.ProductName,
+        od.Quantity AS 'MostSoldQuantity',
+        MIN(od.Quantity) AS 'LeastSoldQuantity'
+    FROM Orders o
+    INNER JOIN OrderDetails od
+        ON o.OrderID = od.OrderID
+    INNER JOIN Products p
+        ON od.ProductID = p.ProductID
+    WHERE MONTH(o.OrderDate) = @Month
+        AND YEAR(o.OrderDate) = @Year
+    GROUP BY p.ProductName, od.Quantity
+    ORDER BY od.Quantity DESC
