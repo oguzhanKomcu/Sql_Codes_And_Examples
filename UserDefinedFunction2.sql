@@ -62,7 +62,9 @@ RETURN
     GROUP BY p.ProductName, od.Quantity
     ORDER BY od.Quantity DESC
     
-    
+--We have to do it this way to run the function. Because it's a table value function.   
+SELECT *
+FROM GetMonthlyStats(5,2022) 
     
   
 CREATE FUNCTION DBO.GET_ITEM_PRICE (@PRICETYPE AS VARCHAR(10))
