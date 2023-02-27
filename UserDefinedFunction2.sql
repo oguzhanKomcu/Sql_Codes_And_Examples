@@ -3,6 +3,8 @@
 --Then we create it as "returns + variable type" to specify the return type.
 --If you want to create a variable inside our function, we create it as "declare + as + @variableName + variable type".
 --Then we create our necessary conditions or it may be in different transactions.
+-- If we want to assign a value to our variable in the function, we can do this with the "SET" command.
+"set+ @ourvariable + =  + value"
 --To finish our function as well "RETURN @RESULT
 --END" we are making a comeback in this way.
 
@@ -12,8 +14,10 @@ RETURNS VARCHAR(10)
 AS
 BEGIN
 DECLARE @RESULT AS VARCHAR(10)
-IF DATEPART (MONTH,@DATE)=1 SET @RESULT='01.OCK'
-IF DATEPART (MONTH, @DATE)=2 SET @RESULT='02. SUB'
+IF DATEPART (MONTH,@DATE)=1 
+SET @RESULT='01.OCK'
+IF DATEPART (MONTH, @DATE)=2 
+SET @RESULT='02. SUB'
 IF DATEPART (MONTH,@DATE)=3 SET @RESULT='03. MAR'
 IF DATEPART (MONTH, @DATE)=4 SET @RESULT='04. NÝS'
 IF DATEPART (MONTH,@DATE)=5 SET @RESULT='05.MAY'
