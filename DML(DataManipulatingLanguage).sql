@@ -30,3 +30,14 @@ update Suppliers set Phone = '05359877884'  where SuppliersId = 70
 ---Let's delete the new supplier we added.
 delete  from Suppliers WHERE SuppliersId = 70
 
+
+
+---If we want to create a backup table from our table, we use this code.
+--Before backup table name = SuppliersYedek
+--After base table name = Suppliers
+
+
+SELECT * INTO SuppliersYedek FROM Suppliers  
+
+
+
